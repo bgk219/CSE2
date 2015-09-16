@@ -38,7 +38,7 @@ int remainingTime;
 remainingTime=dinnerTime-currentTime;
 
 //print the completed calculations
-System.out.println("the amount of time remaining (in the form of HHMM is"+remainingTime);
+System.out.println("the amount of time remaining (in the form of HHMM) is"+remainingTime);
     
         
     } //end of main method
