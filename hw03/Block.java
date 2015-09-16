@@ -38,14 +38,14 @@ System.out.println("Enter the height of the block");
 double height=myScanner.nextDouble();
     
 //Assign volume and surface area as doubles
-double volume
-double surfaceArea
+double volume;
+double surfaceArea;
 
 //calculate volume by multiplying length, width, and height
-volume= length*width*height
+volume= length*width*height;
 
 //calculate surface area by multiplying length and width
-surfaceArea=length*width
+surfaceArea=length*width;
 
 //print the completed calculations
 System.out.println("the volume of the block is"+volume);
