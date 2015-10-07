@@ -26,34 +26,34 @@ Scanner myScanner=new Scanner(System.in);
 //Prompt the user for entering the 10 digit ISBN number
 System.out.println("Enter a 10 digit ISBN number");
 
-System.out.println("10th place digit");
+System.out.println("Enter the first digit");
 int first = myScanner.nextInt();
 
-System.out.println("9th place digit");
+System.out.println("Enter the second digit");
 int second = myScanner.nextInt();
 
-System.out.println("8th place digit");
+System.out.println("Enter the third digit");
 int third = myScanner.nextInt();
 
-System.out.println("7th place digit");
+System.out.println("Enter the fourth digit");
 int fourth = myScanner.nextInt();
 
-System.out.println("6th place digit");
+System.out.println("Enter the fifth digit");
 int fifth = myScanner.nextInt();
 
-System.out.println("5th place digit");
+System.out.println("Enter the sixth digit");
 int sixth = myScanner.nextInt();
 
-System.out.println("4th place digit");
+System.out.println("Enter the seventh digit");
 int seventh = myScanner.nextInt();
 
-System.out.println("3rd place digit");
+System.out.println("Enter the eighth digit");
 int eighth = myScanner.nextInt();
 
-System.out.println("2nd place digit");
+System.out.println("Enter the ninth digit");
 int ninth = myScanner.nextInt();
 
-System.out.println("1st place digit");
+System.out.println("Enter the tenth digit");
 int tenth = myScanner.nextInt();
 
 for(int i=10; i>0; i-- ) {
@@ -87,6 +87,17 @@ for(int i=10; i>0; i-- ) {
     }
 }
     
+//find the summation of all the numbers
+int summation= first + second+ third + fourth + fifth + sixth + seventh + eighth + ninth;
+
+//check to see if the barcode is valid or invalid
+if (summation % 11 == tenth) {
+    System.out.println("the barcode is valid");
+}
+else {
+    System.out.println("the barcode is invalid");
+}
+
 
 /*
 //Use the scanner class to obtain a 10 digit ISBN number
