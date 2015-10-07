@@ -26,58 +26,93 @@ Scanner myScanner=new Scanner(System.in);
 //for Sunday
 System.out.println("Enter Sunday's expenses");
 double Sunday=myScanner.nextDouble();
-for( int i=0; i<Sunday; i++) {
-    System.out.print("*");
-}
+if(Sunday>0 && Sunday<9999) {
+    for( int i=0; i<Sunday; i++) {
+        System.out.print("*");
+    }
 System.out.println("");
+}
+else {
+    System.out.println("Your entry was invalid. Do not enter letters, negatives, or unreasonable numbers OVER 9999!!!!!!");
+}
 
 //for Monday
 System.out.println("Enter Monday's expenses");
 double Monday=myScanner.nextDouble();
-for( int i=0; i<Monday; i++) {
-    System.out.print("*");
+if(Monday>0 && Monday<9999) {
+    for( int i=0; i<Monday; i++) {
+        System.out.print("*");
+    }
+    System.out.println("");
 }
-System.out.println("");
+else {
+    System.out.println("Your entry was invalid. Do not enter letters, negatives, or unreasonable numbers OVER 9999!!!!!!");
+}
 
 //for Tuesday
 System.out.println("Enter Tuesday's expenses");
 double Tuesday=myScanner.nextDouble();
-for( int i=0; i<Tuesday; i++) {
-    System.out.print("*");
+if(Tuesday>0 && Tuesday<9999) {
+    for( int i=0; i<Tuesday; i++) {
+        System.out.print("*");
+    }
+    System.out.println("");
 }
-System.out.println("");
+else {
+    System.out.println("Your entry was invalid. Do not enter letters, negatives, or unreasonable numbers OVER 9999!!!!!!");
+}
 
 //for Wednesday
 System.out.println("Enter Wednesday's expenses");
 double Wednesday=myScanner.nextDouble();
-for( int i=0; i<Wednesday; i++) {
-    System.out.print("*");
+if(Wednesday>0 && Wednesday<9999) {
+    for( int i=0; i<Wednesday; i++) {
+        System.out.print("*");
+    }
+    System.out.println("");
 }
-System.out.println("");
+else {
+    System.out.println("Your entry was invalid. Do not enter letters, negatives, or unreasonable numbers OVER 9999!!!!!!");
+}
 
 //for Thursday
 System.out.println("Enter Thursday's expenses");
 double Thursday=myScanner.nextDouble();
-for( int i=0; i<Thursday; i++) {
-    System.out.print("*");
+if (Thursday>0 && Thursday<9999) {
+    for( int i=0; i<Thursday; i++) {
+        System.out.print("*");
+    }
+    System.out.println("");
 }
-System.out.println("");
+else {
+    System.out.println("Your entry was invalid. Do not enter letters, negatives, or unreasonable numbers OVER 9999!!!!!!");
+}
 
 //for Friday
 System.out.println("Enter Friday's expenses");
 double Friday=myScanner.nextDouble();
-for( int i=0; i<Friday; i++) {
-    System.out.print("*");
+if (Friday>0 && Thursday<9999) {
+    for( int i=0; i<Friday; i++) {
+        System.out.print("*");
+    }
+    System.out.println("");
 }
-System.out.println("");
+else {
+    System.out.println("Your entry was invalid. Do not enter letters, negatives, or unreasonable numbers OVER 9999!!!!!!");
+}
 
 //for Saturday
 System.out.println("Enter Saturday's expenses");
 double Saturday=myScanner.nextDouble();
-for( int i=0; i<Saturday; i++) {
-    System.out.print("*");
+if(Saturday>0 && Saturday<9999) {
+    for( int i=0; i<Saturday; i++) {
+        System.out.print("*");
+    }
+    System.out.println("");
 }
-System.out.println("");
+else {
+    System.out.println("Your entry was invalid. Do not enter letters, negatives, or unreasonable numbers OVER 9999!!!!!!");
+}
 
 //Calculate average weekly expense
 double weeklyExpense= Sunday + Monday + Tuesday + Wednesday + Thursday + Friday + Saturday;
@@ -100,20 +135,5 @@ else if (coinToss <= 100 ) {
     double expense4= ((double)((int)((futureWeek*52*4)*100)))/100;
     System.out.println("Estimated expenditure for 4 years: $" + expense4);
 }
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
     } //end of main method
 } //end of class
