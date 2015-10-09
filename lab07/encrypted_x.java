@@ -39,13 +39,12 @@ for(int lineN=0; lineN<input; lineN++) {
        if(lineN == posN){
            System.out.print(" ");
        }
-       else if(input - lineN == posN) {
+       else if(input -1 - lineN == posN) {
            System.out.print(" ");
        }
        else {
         System.out.print("*");
        }
-        
         
     }//end of inner loop
 System.out.println("");
