@@ -14,21 +14,37 @@ public class encrypted_x {
         
 //Use the scanner to capture an input.
 Scanner myScanner=new Scanner(System.in);
+System.out.println("Please enter an integer between 0 and 100");
 
+int input = 0;
 
-System.out.println("How many lines will the message be?");
-int input = myScanner.nextInt();
-
-
-
-
-/*
-//Create an integer to store user input.
-int myInt = 0;
-*/
-
-//Create a switch to decide if you want to ask (user) again.
+//Validate the input, ask the user for another input if invalid.
+//loop until a valid input is given.
 boolean acceptable = false;
+while (!acceptable) {
+    if(myScanner.hasNextInt()) {
+        input = myScanner.nextInt();
+        if(input>0 && input<100) {
+        acceptable = true;
+    }//end of nested if
+    }
+    else {
+        System.out.println("Error: input must be greater that zero and less that 100");
+        System.out.println("Try again: ");
+        myScanner.next();
+        acceptable = false;
+    }//end of else
+}
+
+if(input<0) {
+    System.out.println("Error: input must be greater that zero and less that 100");
+        System.out.println("Try again: ");
+}
+
+if(input>100) {
+    System.out.println("Error: input must be greater that zero and less that 100");
+        System.out.println("Try again: ");
+}
 
 //loop until an acceptable input is given.
 //reject strings, negatives, and numbers > 100.
