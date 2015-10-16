@@ -44,10 +44,10 @@ while (!acceptable) {
 for(int i=0; i<width; i++) {
     for(int j=0; j<length; j++){
         if( i == j % width) {
-            System.out.print("X");
+            System.out.print("\\");
         } //end of if
-        else if( i == j % length ) {
-            System.out.print("A");
+        else if( width - (j % width) - 1 == i) {
+            System.out.print("/");
         } //end of else if
         
         else{
