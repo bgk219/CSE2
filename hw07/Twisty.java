@@ -40,6 +40,34 @@ while (!acceptable) {
 } //end of while
 
 
+
+for(int i=0; i<width; i++) {
+    for(int j=0; j<length; j++){
+        if( i == j % width) {
+            System.out.print("X");
+        } //end of if
+        else if( i == j % length ) {
+            System.out.print("A");
+        } //end of else if
+        
+        else{
+            System.out.print(" ");
+        }
+        
+    }//end of 2nd for
+    System.out.println("");
+} //end of first for
+
+
+
+
+
+
+
+
+
+
+
 /*
 //Create a twisting pattern
 System.out.println("");
