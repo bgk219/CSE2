@@ -42,25 +42,39 @@ while (!acceptable) {
 
 
 for(int i=0; i<width; i++) {
-    for(int j=0; j<length; j++){
-        if( i == j % width) {
-            System.out.print("\\");
-        } //end of if
-        else if( width - (j % width) - 1 == i) {
+    boolean twist = false;
+    int counter = length;
+    while(counter >= 0) { 
+        for(int j=0; j<width; j++){
+            if( (i == j % width) && twist == false ) {
+            System.out.print("#");
+            counter--;
+            } //end of if
+            else if( (width - (j % width) - 1 == i) && twist == false) {
             System.out.print("/");
-        } //end of else if
-        
-        else{
+            counter--;
+            } //end of else if
+            else if ((i == j % width) && twist == true){
+            System.out.print("\\");
+            counter--;
+          } // end of else if
+            else if ((width - (j % width) - 1 == i) && twist == true) {
+            System.out.print("#");
+            counter--;
+            }// end of else if
+            else{
             System.out.print(" ");
-        }
+            counter--;
+         }
+     
         
-    }//end of 2nd for
-    System.out.println("");
-} //end of first for
+      }//end of 2nd for
+      twist = !twist;
+    
+    } //end of while
+      System.out.println("");
 
-
-
-
+}//end of for
 
 
 
