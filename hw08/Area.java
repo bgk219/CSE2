@@ -16,32 +16,23 @@ public class Area {
     //create a method that calculates the area of a rectangle
     public static double rectangleArea(double width, double height) {
         return width*height;
-        
-        
     } //end of rectangleArea method
     
     //create a method that calculates the area of a triangle
     public static double triangleArea(double base, double height) {
         return (base*height)/2;
-        
-        
     } //end of triangleArea method
     
     //create a method that calculates the area of a circle
     public static double circleArea ( double radius) {
         return (radius*radius)*3.14159;
-        
-        
     } //end of circleArea method
 
     //create a method that checks the input
     public static String getValid() {
         boolean valid = false;
-        
         Scanner myScanner = new Scanner(System.in);
-        
         while(!valid) {
-            
              //prompt user to enter input & accept input
             System.out.println("Would you like to find the area of a 'rectangle','triangle', or a 'circle'?");           
             String choice = myScanner.next();
