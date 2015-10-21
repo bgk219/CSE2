@@ -54,27 +54,15 @@ public class StringAnalysis {
             System.out.println("What is the String you'd like to analyze?");
             String thisString = myScanner.next();
             result = myString(thisString);
-        }
+        } //end of if
         else if(userInput .equals("y")) {
             System.out.println("what is the String you'd like to analyze?");
             String thisString2 = myScanner.next();
             System.out.println("how many characters would you like to check?");
             int thisMany = myScanner.nextInt();
            result = myString(thisString2, thisMany);
-        }
-    
-    
-        
+        } //end of else if
     } //end of main method
-    
-    
-    
-    
-    
-    
-    
-    
-    
 } //end of class
 
 
